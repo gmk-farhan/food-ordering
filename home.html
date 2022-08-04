@@ -1,0 +1,187 @@
+<html>
+<head>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image:url("images/background.jpg");
+        background-size: cover;
+    }
+    .sec1{
+        height:80px;
+    }
+    .tchange{
+        position: absolute;
+        top: 4%;
+        left: 30%;
+        color: aqua;
+    }
+    .tchange h2{
+        width: 100%;
+        font-size: 60px;
+    }
+    .topnav {
+        background-color: #002664;
+        
+    }
+    .topnav #myLinks {
+        display: none;
+    }
+    
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+        display: block;
+    }
+    .topnav a.icon {
+        background: #002664;
+        display: block;
+        position: absolute;
+    }
+    .topnav a:hover {
+        background-color: #6ac9f8;
+        color: black;
+    }
+    .active {
+        background-color: gray;
+        color: white;
+        margin-left: 54px;
+        padding: 8px 0px;
+    }
+    #dishes{
+        margin-left:20px; ;
+        align-items: center;
+        color:white;
+        filter: drop-shadow(0.25rem 0.25rem 0.5rem #000000);
+    }
+    #desserts{
+        align-items: center;
+        color:white;
+        filter: drop-shadow(0.25rem 0.25rem 0.5rem #000000);
+    }
+    .sub-head{
+        color:gray;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .flex-row{
+        display:flex;
+    }
+    #sec2{
+        width:100%;
+        height:80px;
+    }
+    #sec2 h2{
+        width: 100%;
+        left: 35%;
+        font-size: 30px;
+    }
+    .head-2{
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+    #sec2 input{
+        width: 30%;
+        text-align: center;
+    }
+    .sec3{
+        margin-left: 20px;
+        height:80px;
+        align-content: center;
+    }
+    .sec3 input{
+        display: block;
+        font-size: 15px;
+        border-bottom: 1px solid gray;
+        text-align: center;
+        filter: drop-shadow(0.25rem 0.25rem 0.5rem #000000);
+    } 
+    .list{
+        box-shadow: 2px 2px 10px #888888;
+        padding:5px;
+        text-align:center;
+        margin-top: 40px;
+        margin-left: 85px;
+        display: inline-block;
+        border-radius: 4%;
+        background-color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="sec1">
+        <div class="tchange">
+            <h2>G.M.K. FOOD COURT</h2>
+        </div>
+    </div>
+    <div class="topnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <img src="key.png" 
+            width="19px" id="cross"> </a>
+        <a href="" class="active"> Home</a>
+        <div id="myLinks">
+            <table>
+                <tr><td><a href="">Dishes</a></td></tr>
+                <tr><td><a href="">Desserts</a></td></tr>
+                <tr><td><a href="">About Us</a></td></tr>
+                <tr><td><a href="">Contact Us</a></td></tr>
+            </table>
+        </div>
+    </div>
+    <form action="order.jsp">
+    <section id="sec2">
+        <div class="flex-row" >
+            <div id="dishes">
+                <div class="list"><img style="height: 200px;width:200px;" src="images/dish3.jpg" width="50%" height="50%"/>
+                <p class="head-2">Hyderabadi Dum Biryani</p>
+                <input type="text" value="Order"name="i1"></div><br>
+                <div class="list"><img style="height: 200px;width:200px;" src="images/haleem.jpg" width="50%" height="50%"/>
+                <p class="head-2">Haleem</p>
+                <input type="text" value="Order" name="i2"></div><br>
+                <div class="list"><img style="height: 200px;width:200px;" src="images/dish2.png" width="50%" height="50%"/>
+                <p class="head-2">Shawarma</p>
+                <input type="text" value="Order" name="i3"></div><br>
+            </div>
+            <div id="dishes">
+                <div class="list"><img style="height: 200px;width:200px;" src="images/chicken-65.jpg" width="50%" height="50%"/>
+                <p class="head-2">Chicken-65</p>
+                <input type="text" value="Order" name="i4"></div><br>
+                <div class="list"><img style="height: 200px;width:200px;" src="images/chicken gravy.jpg" width="50%" height="50%"/>
+                <p class="head-2">Chicken Gravy</p>
+                <input type="text" value="Order" name="i5"></div><br>
+                <div class="list"><img style="height: 200px;width:200px;" src="images/Tandoori-Chicken-1-500x375.jpg" width="50%" height="50%"/>
+                <p class="head-2">Tandoori Chicken</p>
+                <input type="text" value="Order" name="i6"></div><br>
+            </div>
+            <div id="desserts">
+                <div class="list"><img style="height: 200px;width:200px;" src="images/doyble ka metha.jpg" width="50%" height="50%"/>
+                <p class="head-2">Shahi Tukda</p>
+                <input type="text" value="Order" name="i7"></div><br>
+                <div class="list"><img style="height: 200px;width:200px;" src="images/desert1.jpg" width="50%" height="50%"/>
+                <p class="head-2">Gulab Jamun</p>
+                <input type="text" value="Order" name="i8"></div><br>
+                <div class="list"><img style="height: 200px;width:200px;" src="images/rabdi.jpg" width="50%" height="50%"/>
+                <p class="head-2">Special Rabdi</p>
+                <input type="text" value="Order" name="i9"></div><br>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="sec3">
+              <div class="ord">
+              <h2 style="color: white">Place Your Order With Us Here!</h2><br>
+              <label style=" width: 50px; color: white">Name<input type="text" name="name">
+              </label><br>
+              <label style="color: white">Phone number<input type="text" name="mobile">
+              </label><br>
+              <button class="submit" type="submit">Submit</button>
+            </div>
+        </form>
+</body>
+</html>

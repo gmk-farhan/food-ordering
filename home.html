@@ -136,41 +136,41 @@
             </table>
         </div>
     </div>
-    <form action="order.jsp">
+    <form>
     <section id="sec2">
         <div class="flex-row" >
             <div id="dishes">
                 <div class="list"><img style="height: 200px;width:200px;" src="images/dish3.jpg" width="50%" height="50%"/>
                 <p class="head-2">Hyderabadi Dum Biryani</p>
-                <input type="text" value="Order"name="i1"></div><br>
+                <input type="text" placeholder="Order"name="i1"></div><br>
                 <div class="list"><img style="height: 200px;width:200px;" src="images/haleem.jpg" width="50%" height="50%"/>
                 <p class="head-2">Haleem</p>
-                <input type="text" value="Order" name="i2"></div><br>
+                <input type="text" placeholder="Order" name="i2"></div><br>
                 <div class="list"><img style="height: 200px;width:200px;" src="images/dish2.png" width="50%" height="50%"/>
                 <p class="head-2">Shawarma</p>
-                <input type="text" value="Order" name="i3"></div><br>
+                <input type="text" placeholder="Order" name="i3"></div><br>
             </div>
             <div id="dishes">
                 <div class="list"><img style="height: 200px;width:200px;" src="images/chicken-65.jpg" width="50%" height="50%"/>
                 <p class="head-2">Chicken-65</p>
-                <input type="text" value="Order" name="i4"></div><br>
+                <input type="text" placeholder="Order" name="i4"></div><br>
                 <div class="list"><img style="height: 200px;width:200px;" src="images/chicken gravy.jpg" width="50%" height="50%"/>
                 <p class="head-2">Chicken Gravy</p>
-                <input type="text" value="Order" name="i5"></div><br>
+                <input type="text" placeholder="Order" name="i5"></div><br>
                 <div class="list"><img style="height: 200px;width:200px;" src="images/Tandoori-Chicken-1-500x375.jpg" width="50%" height="50%"/>
                 <p class="head-2">Tandoori Chicken</p>
-                <input type="text" value="Order" name="i6"></div><br>
+                <input type="text" placeholder="Order" name="i6"></div><br>
             </div>
             <div id="desserts">
                 <div class="list"><img style="height: 200px;width:200px;" src="images/doyble ka metha.jpg" width="50%" height="50%"/>
                 <p class="head-2">Shahi Tukda</p>
-                <input type="text" value="Order" name="i7"></div><br>
+                <input type="text" placeholder="Order" name="i7"></div><br>
                 <div class="list"><img style="height: 200px;width:200px;" src="images/desert1.jpg" width="50%" height="50%"/>
                 <p class="head-2">Gulab Jamun</p>
-                <input type="text" value="Order" name="i8"></div><br>
+                <input type="text" placeholder="Order" name="i8"></div><br>
                 <div class="list"><img style="height: 200px;width:200px;" src="images/rabdi.jpg" width="50%" height="50%"/>
                 <p class="head-2">Special Rabdi</p>
-                <input type="text" value="Order" name="i9"></div><br>
+                <input type="text" placeholder="Order" name="i9"></div><br>
             </div>
         </div>
         <br>
@@ -186,5 +186,19 @@
               <button class="submit" type="submit">Submit</button>
             </div>
         </form>
+            <script>
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                var y = document.getElementById("cross");
+                if (x.style.display == "block") {
+                    x.style.display = "none";
+                    y.src="key.png"
+                } 
+                else {
+                x.style.display = "block";
+                y.src="cross.png"
+                }
+            }
+        </script>
 </body>
 </html>
